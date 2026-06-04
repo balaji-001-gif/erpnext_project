@@ -6,11 +6,11 @@ app_icon = "fa fa-puzzle-piece"
 app_color = "grey"
 app_email = "info@example.com"
 app_license = "GNU General Public License (v3)"
-app_url = "https://github.com/balaji-001-gif/projects"
+app_url = "https://github.com/balaji-001-gif/erpnext_project"
 
 required_apps = ["erpnext"]
 
-after_install = "projects.install.after_install"
+after_install = "projects.projects.install.after_install"
 
 # Apps
 # ------------------------------

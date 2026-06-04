@@ -15,7 +15,7 @@ class ProjectUpdate(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		from projects.doctype.project_user.project_user import ProjectUser
+		from projects.projects.doctype.project_user.project_user import ProjectUser
 
 		amended_from: DF.Link | None
 		date: DF.Date | None
