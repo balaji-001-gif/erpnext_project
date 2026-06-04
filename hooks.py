@@ -18,6 +18,10 @@ after_install = "projects.install.after_install"
 # DocTypes
 # ------------------------------
 
+# Bundled JS/CSS that esbuild scans
+app_include_js = "projects.bundle.js"
+app_include_css = "projects.bundle.css"
+
 # Website
 # ------------------------------
 website_route_rules = [
