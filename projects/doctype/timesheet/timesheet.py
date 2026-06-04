@@ -30,7 +30,7 @@ class Timesheet(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		from projects.projects_module.doctype.timesheet_detail.timesheet_detail import TimesheetDetail
+		from projects.projects.doctype.timesheet_detail.timesheet_detail import TimesheetDetail
 
 		amended_from: DF.Link | None
 		base_total_billable_amount: DF.Currency
