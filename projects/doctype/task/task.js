@@ -8,7 +8,7 @@ frappe.ui.form.on("Task", {
 		frm.make_methods = {
 			Timesheet: () =>
 				frappe.model.open_mapped_doc({
-					method: "projects.projects.doctype.task.task.make_timesheet",
+					method: "projects.doctype.task.task.make_timesheet",
 					frm: frm,
 				}),
 		};
@@ -39,7 +39,7 @@ frappe.ui.form.on("Task", {
 
 	is_group: function (frm) {
 		frappe.call({
-			method: "projects.projects.doctype.task.task.check_if_child_exists",
+			method: "projects.doctype.task.task.check_if_child_exists",
 			args: {
 				name: frm.doc.name,
 			},

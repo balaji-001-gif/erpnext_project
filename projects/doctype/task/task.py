@@ -30,7 +30,7 @@ class Task(NestedSet):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		from projects.projects.doctype.task_depends_on.task_depends_on import TaskDependsOn
+		from projects.doctype.task_depends_on.task_depends_on import TaskDependsOn
 
 		act_end_date: DF.Date | None
 		act_start_date: DF.Date | None

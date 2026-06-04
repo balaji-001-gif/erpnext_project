@@ -10,7 +10,7 @@ app_url = "https://github.com/balaji-001-gif/projects"
 
 required_apps = ["erpnext"]
 
-after_install = "projects.projects.install.after_install"
+after_install = "projects.install.after_install"
 
 # Apps
 # ------------------------------

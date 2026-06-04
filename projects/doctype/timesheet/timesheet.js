@@ -238,7 +238,7 @@ frappe.ui.form.on("Timesheet", {
 			dialog.hide();
 			return frappe.call({
 				type: "GET",
-				method: "projects.projects.doctype.timesheet.timesheet.make_sales_invoice",
+				method: "projects.doctype.timesheet.timesheet.make_sales_invoice",
 				args: {
 					source_name: frm.doc.name,
 					item_code: args.item_code,
@@ -267,7 +267,7 @@ frappe.ui.form.on("Timesheet", {
 			frm.doc.time_logs.forEach((row) => {
 				if (row.activity_type) {
 					frappe.call({
-						method: "projects.projects.doctype.timesheet.timesheet.get_activity_cost",
+						method: "projects.doctype.timesheet.timesheet.get_activity_cost",
 						args: {
 							employee: frm.doc.employee,
 							activity_type: row.activity_type,
@@ -355,7 +355,7 @@ frappe.ui.form.on("Timesheet Detail", {
 		if (!frappe.get_doc(cdt, cdn).activity_type) return;
 
 		frappe.call({
-			method: "projects.projects.doctype.timesheet.timesheet.get_activity_cost",
+			method: "projects.doctype.timesheet.timesheet.get_activity_cost",
 			args: {
 				employee: frm.doc.employee,
 				activity_type: frm.selected_doc.activity_type,
