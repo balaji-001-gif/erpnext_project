@@ -27,7 +27,7 @@ class Project(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		from projects.projects.doctype.project_user.project_user import ProjectUser
+		from projects.projects_module.doctype.project_user.project_user import ProjectUser
 
 		actual_end_date: DF.Date | None
 		actual_start_date: DF.Date | None
