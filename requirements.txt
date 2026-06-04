@@ -1,2 +1,2 @@
-frappe>=15.0.0
-erpnext>=15.0.0
+# Dependencies are managed via hooks.py required_apps
+# frappe and erpnext are already installed on the server
